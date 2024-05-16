@@ -1,35 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kompleteCare | login</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <section>
-      <h1>Your health is our number 1 priority</h1>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kompleteCare | login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="flex w-full">
+      <section
+        class="hidden lg:flex lg:flex-col bg-indigo-600 text-white items-center min-h-screen w-1/3"
+      >
+        <div class="m-auto p-16">
+          <h2 class="text-4xl mb-8 font-bold">
+            Your health is our number 1 priority
+          </h2>
 
-      <p>KompleteCare is a marketplace that allows you carry out all your medical needs in one platform.</p> 
-    </section>
-    <section>
-      <img src="" alt="">
-      <h1>Welcome to KompleteCare</h1>
-      <p>Yet to register? <a href="#"><span>Sign up</span></a></p>
-      <button>Sign up with Google</button>
-      <button>Sign up with Facebook</button>
-      <hr><span>or</span><hr>
-      <form>
-        <label for="email-phone-number">Email Address or Phone Number </label>
-        <input type="text" name="email" id="email" placeholder="Email address or Phone number" required>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password" required>
+          <p class="text-xl font-semibold text-justify">
+            KompleteCare is a marketplace that allows you carry out all your
+            medical needs in one platform.
+          </p>
+        </div>
+      </section>
+      <section class="flex flex-col w-screen sm:w-2/3 mx-auto min-h-screen">
+        <div class="container w-screen max-w-screen-sm sm:w-full mx-auto">
+          <div id="logo" class="w-full my-4">
+            <img
+              src="./img/logo.png"
+              alt="Komplete Care logo"
+              class="w-32 h-6 mx-auto"
+            />
+          </div>
+          <div id="welcome-text" class="w-full flex flex-col items-center">
+            <h2
+              class="text-xl sm:text-3xl text-center w-full font-bold mb-8 mx-auto"
+            >
+              Welcome to KompleteCare
+            </h2>
+            <p class="text-center">
+              Yet to register? <a href="#" class="text-indigo-500">Sign up!</a>
+            </p>
+          </div>
 
-        <p>Forgot Password?</p>
-        <button type="submit">Login</button>
-      </form>
-    </section>
-  </main>
-</body>
+          <div id="auth-section" class="w-full mx-auto my-5">
+            <div
+              id="auth-buttons"
+              class="flex flex-col w-full lg:flex-row items-center mx-auto gap-4 px-6"
+            >
+              <button
+                class="flex w-3/5 sm:w-full h-auto border border-solid border-indigo-500 p-2 mx-auto rounded-md"
+              >
+                <div class="flex mx-auto items-center">
+                  <img
+                    src="./img/google-logo.png"
+                    alt="Link to Google"
+                    class="h-6 w-6 mr-3"
+                  />
+                  <p class="sm:text-xl font-semibold">Sign up with google</p>
+                </div>
+              </button>
+              <button
+                class="flex w-3/5 sm:w-full h-auto border border-solid border-indigo-500 p-2 rounded-md"
+              >
+                <div class="flex mx-auto items-center">
+                  <img
+                    src="./img/facebook-logo.png"
+                    alt="Link to Facebook"
+                    class="h-6 w-6 mr-3"
+                  />
+                  <p class="sm:text-xl font-semibold">Sign up with facebook</p>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            id="alternative"
+            class="flex justify-around items-center gap-6 w-4/5 mx-auto my-5"
+          >
+            <hr class="w-1/3" />
+            <span class="w-auto">or</span>
+            <hr class="w-1/3" />
+          </div>
+
+          <div id="reg-form">
+            <form class="w-full mx-auto text-xl flex flex-col items-left gap-4">
+              <label for="email">Email Address or Phone Number <span class="text-red-600">*</span></label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Email Address or Phone Number"
+                class="w-full text-black p-3 rounded-xl border border-solid border-slate-600 dark:border-none"
+                required
+              />
+              <label for="password">Password <span class="text-red-600">*</span></label>
+              <input type="password" name="password" placeholder="Password" class="w-full text-black p-3 rounded-xl border border-solid border-slate-600 dark:border-none mx-auto" required />
+              <p class="text-right text-indigo-500">Forgot Password?</p>
+              <button class="bg-indigo-600 hover:bg-indigo-400 active:bg-indigo-500 text-white text-xl font-semibold p-3 w-full mx-auto rounded-xl border border-solid border-slate-400 dark:border-none">Login</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
