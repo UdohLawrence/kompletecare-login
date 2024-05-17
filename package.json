@@ -1,0 +1,12 @@
+{
+  "name": "kompletecare-login",
+  "version": "1.0.0",
+  "description": "KompleteCare login, styled with tailwindcss",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/style.css -o ./css/style.css --watch",
+    "prettier": "npx prettier --write ./build/*.html"
+  },
+  "author": "Udoh Lawrence",
+  "license": "ISC"
+}
